@@ -289,6 +289,10 @@ const CreateClass = () => {
         }
     }
 
+    function cancelCreation() {
+        window.location.href = "../classes"
+    }
+
     return (
 
         <div className="min-h-full " style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -308,7 +312,7 @@ const CreateClass = () => {
                
                     <input id="classCode" className="hidden text-white border border-gray-700 bg-gray-900  px-4 text-xl py-1 rounded-lg focus:outline-none" placeholder="Class Code"></input>
                     <button onClick={joinClass} className="hidden ml-4 text-white border border-gray-700 bg-gray-900 hover:bg-gray-800 px-4 text-xl py-1 rounded-lg"><i class="fas fa-sign-in-alt mr-1"></i> Join Class</button>
-                    <button className="ml-4 text-white border border-gray-700 bg-gray-900 px-4 text-xl py-1 rounded-lg hover:bg-gray-800"> Cancel Class Creation</button>
+                    <button className="ml-4 text-white border border-gray-700 bg-gray-900 px-4 text-xl py-1 rounded-lg hover:bg-gray-800" onClick={cancelCreation}> Cancel Class Creation</button>
   
                     </div>
                      

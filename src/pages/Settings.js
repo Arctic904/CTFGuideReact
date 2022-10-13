@@ -94,14 +94,7 @@ const Settings = () => {
                 document.getElementById("confirmnewpass").classList.add("border-red-600")
 
             })
-        }
-
-        
-
-
-
-
-        
+        }  
     }
 
     useEffect(() => {
